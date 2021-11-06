@@ -1,5 +1,5 @@
 
-class Testes { 
+class Studies { 
     public static void main(String args[]){
         int x, z, y; 
         
