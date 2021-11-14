@@ -1,3 +1,4 @@
+
 package fundamentos;
 
 import java.util.Scanner;
@@ -27,5 +28,6 @@ public class Console {
 
         System.out.printf("Name: %s %s has %d years old", fName, lName, age);
         entry.close();
+
     }
 }
