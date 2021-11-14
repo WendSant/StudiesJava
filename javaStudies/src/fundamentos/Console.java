@@ -17,14 +17,15 @@ public class Console {
 
         Scanner entry = new Scanner(System.in);
 
+        System.out.println("Type your age: ");
+        int age = entry.nextInt();
+        entry.nextLine();
         System.out.println("Type your firstname: ");
         String fName = entry.nextLine();
         System.out.println("Type your lastname: ");
         String lName = entry.nextLine();
-        System.out.println("Type your age: ");
-        int age = entry.nextInt();
 
         System.out.printf("Name: %s %s has %d years old", fName, lName, age);
-
+        entry.close();
     }
 }
