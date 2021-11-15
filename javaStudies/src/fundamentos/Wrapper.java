@@ -6,7 +6,7 @@ public class Wrapper {
     public static void main(String[] args) {
         Scanner entry = new Scanner(System.in);
 
-        Byte b = 100;
+        Byte b = 127;
         Short s = 1000;
         // Integer i = Integer.parseInt(entry.next());
         Long l = 10000L;
