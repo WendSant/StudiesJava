@@ -40,6 +40,7 @@ public class GamePalpite {
         while (intRandom < 11) {
             intRandom++;
         }
+
         String s = String.valueOf(intRandom);
         char charRandom1 = s.charAt(0);
         char charRandom2 = s.charAt(1);
@@ -61,6 +62,7 @@ public class GamePalpite {
 
             if (input == intRandom) {
                 System.out.println(win);
+                scanner.close();
                 return;
             } else if (charRandom1 == charInput || charRandom2 == charInput2) {
                 System.out.println("1B,OC");
@@ -72,6 +74,7 @@ public class GamePalpite {
             } else {
                 System.out.println("0B,0C");
             }
+
         }
 
     }
