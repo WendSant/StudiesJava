@@ -1,4 +1,5 @@
-package fundamentos;
+
+package fundamentos.operators;
 
 import java.util.Locale;
 import java.util.Scanner;
