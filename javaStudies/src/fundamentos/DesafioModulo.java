@@ -10,9 +10,20 @@ public class DesafioModulo {
 
         Scanner entry = new Scanner(System.in);
         System.out.println("Type first number: ");
-        String num1 = entry.nextLine().replace(",", ".");
+        double num1 = entry.nextDouble();
         System.out.println("Type second number: ");
-        String num2 = entry.nextLine().replace(",", ".");
+        double num2 = entry.nextDouble();
+        System.out.println("Type the operation");
+        String op = entry.next();
+
+        double resultFinal = op.equals("+") ? num1 + num2 : 0;
+        resultFinal = op.equals("-") ? num1 - num2 : resultFinal;
+        resultFinal = op.equals("*") ? num1 * num2 : resultFinal;
+        resultFinal = op.equals("/") ? num1 / num2 : resultFinal;
+        resultFinal = op.equals("%") ? num1 % num2 : resultFinal;
+
+        System.out.printf("O resultado da seguinte operação %.2f %s %.2f é %.2f%n", num1, op, num2, resultFinal);
+
         entry.close();
     }
 }
