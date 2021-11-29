@@ -8,22 +8,22 @@ public class ChallengeDayOfWeek {
         Locale.setDefault(new Locale("en", "US"));
         Scanner entry = new Scanner(System.in);
 
-        System.out.println("Type a day of the week(1-7)");
-        int day = entry.nextInt();
-        if (day == 1) {
-            System.out.println("You selected Sunday");
-        } else if (day == 2) {
-            System.out.println("You selected Monday");
-        } else if (day == 3) {
-            System.out.println("You selected Tuesday");
-        } else if (day == 4) {
-            System.out.println("You selected Wednesday");
-        } else if (day == 5) {
-            System.out.println("You selected Thursday");
-        } else if (day == 6) {
-            System.out.println("You selected Friday");
-        } else if (day == 7) {
-            System.out.println("You selected Saturday");
+        System.out.println("Type a day of the week(Sunday-Saturday)");
+        String day = entry.nextLine();
+        if (day.equalsIgnoreCase("sunday")) {
+            System.out.println("You selected 1");
+        } else if (day.equalsIgnoreCase("monday")) {
+            System.out.println("You selected 2");
+        } else if (day.equalsIgnoreCase("tuesday")) {
+            System.out.println("You selected 3");
+        } else if (day.equalsIgnoreCase("wednesday")) {
+            System.out.println("You selected 4");
+        } else if (day.equalsIgnoreCase("thursday")) {
+            System.out.println("You selected 5");
+        } else if (day.equalsIgnoreCase("friday")) {
+            System.out.println("You selected 6");
+        } else if (day.equalsIgnoreCase("saturday")) {
+            System.out.println("You selected 7");
         } else {
             System.out.println("Option Invalid");
         }
