@@ -36,11 +36,9 @@ public class GamePalpite {
         System.out.println(frasePtWelcomeTwo);
         Random random = new Random();
         int intRandom = random.nextInt(99);// 66---100
-
         while (intRandom < 11) {
             intRandom++;
         }
-
         String s = String.valueOf(intRandom);
         char charRandom1 = s.charAt(0);
         char charRandom2 = s.charAt(1);
