@@ -7,26 +7,26 @@ public class ExerciseSix {
     public static void main(String[] args) {
         Scanner entry = new Scanner(System.in);
         // Gerador do numero
-        int again;
+        int again, tries, numberRandom, guessNumber;
         do {
             Random random = new Random();
-            int numberRandom = random.nextInt(100);
+            numberRandom = random.nextInt(100);
             System.out.println("Número aleatorio abaixo, caso queira tentar acertar só comentar a linha ou apaga-la");
             System.out.println(numberRandom);
 
-            for (int tentantivas = 9; tentantivas >= 0; tentantivas--) {
+            for (tries = 9; tries >= 0; tries--) {
                 System.out.println("Enter your guess");
-                int palpite = entry.nextInt();
-                if (palpite >= 0 && palpite <= 100) {
-                    if (palpite == numberRandom) {
+                guessNumber = entry.nextInt();
+                if (guessNumber >= 0 && guessNumber <= 100) {
+                    if (guessNumber == numberRandom) {
                         System.out.println("Congratulations");
                         break;
-                    } else if (palpite > numberRandom) {
+                    } else if (guessNumber > numberRandom) {
                         System.out.println("Your guess is greater than the number generated ");
-                        System.out.printf("You have %d attempts%n", tentantivas);
+                        System.out.printf("You have %d attempts%n", tries);
                     } else {
                         System.out.println("Your guess is less than the generated number ");
-                        System.out.printf("You have %d attempts%n", tentantivas);
+                        System.out.printf("You have %d attempts%n", tries);
                     }
                 } else {
                     System.out.println("Invalid Number enter a number between 0-10");
