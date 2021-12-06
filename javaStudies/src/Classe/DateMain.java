@@ -7,5 +7,6 @@ public class DateMain {
         date1.month = 12;
         date1.year = 2021;
         System.out.println(date1.obterDate());
+        date1.printFormatedDate();
     }
 }

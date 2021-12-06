@@ -10,4 +10,8 @@ public class Date {
         return day + "/" + month + "/" + year;
     }
 
+    void printFormatedDate() {
+        System.out.println(obterDate());
+    }
+
 }
