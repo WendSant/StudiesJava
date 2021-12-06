@@ -6,4 +6,8 @@ public class Date {
     int month;
     int year;
 
+    String obterDate() {
+        return day + "/" + month + "/" + year;
+    }
+
 }
