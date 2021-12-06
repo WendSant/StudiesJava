@@ -1,5 +1,5 @@
 
-package fundamentos;
+package ExercisesControl;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -8,34 +8,42 @@ public class GamePalpite {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String language = "";
+        String fraseWelcome = "", fraseWelcomeTwo = "", frasePalpite = "", fraseErroUmDig = "", win = "";
 
-        System.out.println("Type language en or pt(Digite a linguagem en ou pt)");
-        String language = scanner.nextLine();
-        String frasePtWelcome = "", frasePtWelcomeTwo = "", fraseDigOqAcha = "", fraseErroUmDig = "", win = "";
+        while (!language.equalsIgnoreCase("pt") || !language.equalsIgnoreCase("en")) {
+            System.out.println("Type language en or pt(Digite a linguagem en ou pt)");
+            language = scanner.nextLine();
+            if (language.equalsIgnoreCase("pt") || language.equalsIgnoreCase("en")) {
+                break;
+            }
+            System.out.println("\nEnter a valid language(Digite uma lingua válida)");
+
+        }
 
         if (language.equalsIgnoreCase("pt")) {
-            frasePtWelcome = "Bem-vindo ao jogo Bulls and Cows";
-            frasePtWelcomeTwo = "Este é um jogo mental lógico"
-                    + "\nAqui B significa que um dos seus números de adivinhação está dentro do número escondido e no lugar certo"
-                    + "\nAqui C significa que um dos seus números de adivinhação está dentro do número oculto, mas no lugar errado";
-            fraseDigOqAcha = "Digite seu palpite";
-            fraseErroUmDig = "Você inseriu um numero de um digite por favor digite um número de 10 a 99";
-            win = "Parabéns você ganhou";
+            fraseWelcome = "Bem-vindo ao jogo Bulls and Cows";
+            fraseWelcomeTwo = "Este é um jogo mental lógico"
+                    + "\nNeste game a letra B significa que um dos seus palpites está dentro do número escondido e no lugar certo"
+                    + "\ne a letra C significa que um dos seus palpites está dentro do número escondido mas no lugar errado";
+            frasePalpite = "Digite seu palpite";
+            fraseErroUmDig = "Você inseriu um numero de um digito(0 a 9), por favor digite um número de dois digitos (10 a 99)";
+            win = "Parabéns você ganhou!";
 
-        } else {
-            frasePtWelcome = "Welcome to the Bulls and Cows game!";
-            frasePtWelcomeTwo = "This is a logical mind games"
+        } else if (language.equalsIgnoreCase("en")) {
+            fraseWelcome = "Welcome to the Bulls and Cows game!";
+            fraseWelcomeTwo = "This is a logical mind games"
                     + "\nHere B means one of your guessing numbers is inside the hidden number and in the right place"
                     + "\nHere C means one of your guessing numbers is inside the hidden number but in the wrong place";
-            fraseDigOqAcha = "Enter your guess";
+            frasePalpite = "Enter your guess";
             fraseErroUmDig = "You entered one level number,please enter two level number";
             win = "Congratulations";
         }
 
-        System.out.println(frasePtWelcome);
-        System.out.println(frasePtWelcomeTwo);
+        System.out.println(fraseWelcome);
+        System.out.println(fraseWelcomeTwo);
         Random random = new Random();
-        int intRandom = random.nextInt(99);// 66---100
+        int intRandom = random.nextInt(99);
         while (intRandom < 11) {
             intRandom++;
         }
@@ -47,7 +55,7 @@ public class GamePalpite {
             if (charRandom1 == charRandom2) {
                 charRandom1++;
             }
-            System.out.println(fraseDigOqAcha);
+            System.out.println(frasePalpite);
             String strRandom = scanner.nextLine();
 
             int input = Integer.parseInt(strRandom);
