@@ -19,8 +19,8 @@ public class ProductTest {
         System.out.println(p1.name);
         System.out.println(p2.name);
 
-        double finalPrize = p1.prize * (1 - p1.discount);
-        double finalPrize2 = p2.prize * (1 - p2.discount);
+        double finalPrize = p1.prizeDiscount();
+        double finalPrize2 = p2.prizeDiscount(0.2);
         double average = (finalPrize + finalPrize2) / 2;
 
         System.out.printf("Products average: %.2f%n", average);
