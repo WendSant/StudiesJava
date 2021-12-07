@@ -6,10 +6,7 @@ public class ProductTest {
     public static void main(String[] args) {
         Scanner entry = new Scanner(System.in);
 
-        Product p1 = new Product();
-        p1.name = "Note";
-        p1.prize = 1500;
-        p1.discount = 0.20;
+        Product p1 = new Product("Note", 1500, 0.20);
 
         var p2 = new Product();
         p2.name = "Smartphone";
