@@ -12,7 +12,10 @@ public class Date {
         year = year == 0 ? 1970 : year;
     }
 
-    Date(int initialDay) {
+    Date(int initialDay, int initialMonth, int initialYear) {
+        day = initialDay;
+        month = initialMonth;
+        year = initialYear;
     }
 
     String obterDate() {
