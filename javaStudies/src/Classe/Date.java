@@ -6,6 +6,15 @@ public class Date {
     int month;
     int year;
 
+    Date() {
+        day = day == 0 ? 01 : day;
+        month = month == 0 ? 01 : month;
+        year = year == 0 ? 1970 : year;
+    }
+
+    Date(int initialDay) {
+    }
+
     String obterDate() {
         return day + "/" + month + "/" + year;
     }
