@@ -2,14 +2,17 @@ package Classe;
 
 public class AreaCirc {
     double radius;
-    double pi;
+    static final double PI = 3.1415;
 
     AreaCirc(double initialRadius) {
-        pi = 3.14;
         radius = initialRadius;
     }
 
     double area() {
-        return pi * Math.pow(radius, 2);
+        return PI * Math.pow(radius, 2);
+    }
+
+    static double area(double radius) {
+        return PI * Math.pow(radius, 2);
     }
 }
