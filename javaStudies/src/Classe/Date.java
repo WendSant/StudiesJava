@@ -7,15 +7,13 @@ public class Date {
     int year;
 
     Date() {
-        day = day == 0 ? 01 : day;
-        month = month == 0 ? 01 : month;
-        year = year == 0 ? 1970 : year;
+        this(1, 1, 1970);
     }
 
     Date(int initialDay, int initialMonth, int initialYear) {
-        day = initialDay;
-        month = initialMonth;
-        year = initialYear;
+        this.day = initialDay;
+        this.month = initialMonth;
+        this.year = initialYear;
     }
 
     String obterDate() {
@@ -23,7 +21,7 @@ public class Date {
     }
 
     void printFormatedDate() {
-        System.out.println(obterDate());
+        System.out.println(this.obterDate());
     }
 
 }
