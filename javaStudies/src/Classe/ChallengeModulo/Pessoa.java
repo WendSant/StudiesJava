@@ -8,7 +8,14 @@ public class Pessoa {
 
     }
 
-    void comer(Double comida) {
-        this.peso = peso + comida;
+    Pessoa(String nome, double peso) {
+
+        this.nome = nome;
+        this.peso = peso;
+
+    }
+
+    void comer(Comida comida) {
+        this.peso += comida.peso;
     }
 }
