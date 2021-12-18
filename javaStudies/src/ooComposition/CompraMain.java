@@ -13,7 +13,7 @@ public class CompraMain {
         System.out.println(compra1.itens.size());
         System.out.println(compra1.obterValorTotal());
 
-        // Relação bidimensional
+        // Relação bidirecional
 
         double total = compra1.itens.get(0).compra.itens.get(1).compra.obterValorTotal();
         System.out.println(total);
