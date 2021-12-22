@@ -15,7 +15,7 @@ public class Matriz {
         double[][] gradesStudents = new double[studentsAmount][grades];
         for (int i = 0; i < gradesStudents.length; i++) {
             for (int j = 0; j < gradesStudents[i].length; j++) {
-                System.out.printf("Enter a grade %d of student %d ", i + 1, j + 1);
+                System.out.printf("Enter a grade %d of student %d ", j + 1, i + 1);
                 gradesStudents[i][j] = entry.nextDouble();
                 total += gradesStudents[i][j];
             }
