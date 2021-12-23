@@ -3,10 +3,9 @@ package Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.swing.plaf.synth.SynthSpinnerUI;
-import javax.xml.transform.stream.StreamSource;
-
 public class MessySet {
+
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     public static void main(String[] args) {
         HashSet set1 = new HashSet();
 
