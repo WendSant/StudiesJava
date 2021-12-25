@@ -7,12 +7,18 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class Loteria {
+    @SuppressWarnings({ "rawtypes", "unchecked" })
+
     public static void main(String[] args) {
         Scanner entry = new Scanner(System.in);
 
         System.out.println("Quantas cartelas?");
         int userCartelas = entry.nextInt();
-
+        while (userCartelas < 1) {
+            System.out.println("Digite uma quantidade valida");
+            System.out.println("Quantas cartelas?");
+            userCartelas = entry.nextInt();
+        }
         int idFixo = 0;
         Cartela[] cartelas = new Cartela[userCartelas];
         for (int i = 0; i < cartelas.length; i++) {
@@ -21,11 +27,10 @@ public class Loteria {
             idFixo++;
             cartelas[i].receberNum();
         }
-        int sortearDnv;
+        int sortearDnv = 0;
         HashSet set1 = new HashSet();
         do {
-            System.out.println("Digite qualquer número para sortear outro número");
-            sortearDnv = entry.nextInt();
+
             System.out.println();
             Set<Integer> numeros = new HashSet<>();
 
@@ -38,7 +43,6 @@ public class Loteria {
                     numeros.remove(n);
                     n = random.nextInt(25);
                     numeros.add(n);
-                    System.out.println("DEU TRUE CARALHO CARALHO CARALHO");
                 }
 
             }
@@ -66,12 +70,12 @@ public class Loteria {
                             cartelas[i].pontos, Arrays.toString(cartelas[i].numeros));
                 }
             }
+            if (sortearDnv == 1) {
+                break;
+            }
+            System.out.println("Digite qualquer número para sortear outro número");
+            sortearDnv = entry.nextInt();
         } while (sortearDnv == 0);
-
-        System.out.println(cartelas[0].pontos);
-        System.out.println(cartelas[1].pontos);
-        System.out.println(cartelas[2].pontos);
-
         entry.close();
 
     }
