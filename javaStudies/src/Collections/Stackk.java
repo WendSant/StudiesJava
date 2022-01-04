@@ -15,6 +15,10 @@ public class Stackk {
         System.out.println(books.peek());
         System.out.println(books.element());
 
+        for (String s : books) {
+            System.out.println(s);
+        }
+
         System.out.println(books.pop());
         System.out.println(books.poll());
         System.out.println(books.poll());
