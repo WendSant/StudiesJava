@@ -46,9 +46,18 @@ public class Exercises {
         // " + (n1 + 1));
 
         // Exercise seven
+        // System.out.println("Enter value");
+        // double n1 = entry.nextDouble();
+        // System.out.println("The double of " + n1 + " is " + (n1 * 2) + " and its
+        // third part is " + (n1 / 3));
+
+        // Exercise eight
         System.out.println("Enter value");
         double n1 = entry.nextDouble();
-        System.out.println("The double of " + n1 + " is " + (n1 * 2) + " and its third part is " + (n1 / 3));
+        System.out.println("The distance of " + n1 + " corresponds to:");
+        System.out.print((n1 / 1000) + "Km                    " + n1 * 10 + "dm\n");
+        System.out.print((n1 / 100) + "Hm                    " + n1 * 100 + "cm\n");
+        System.out.print((n1 / 10) + "Dam                    " + n1 * 1000 + "mm\n");
 
         entry.close();
 
