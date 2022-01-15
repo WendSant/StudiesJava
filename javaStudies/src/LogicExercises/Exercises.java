@@ -40,9 +40,15 @@ public class Exercises {
         // (n1 + n2) / 2);
 
         // Exercise six
+        // System.out.println("Enter value");
+        // int n1 = entry.nextInt();
+        // System.out.println("Its predecessor is " + (n1 - 1) + " and its successor is
+        // " + (n1 + 1));
+
+        // Exercise seven
         System.out.println("Enter value");
-        int n1 = entry.nextInt();
-        System.out.println("Its predecessor is " + (n1 - 1) + " and its successor is " + (n1 + 1));
+        double n1 = entry.nextDouble();
+        System.out.println("The double of " + n1 + " is " + (n1 * 2) + " and its third part is " + (n1 / 3));
 
         entry.close();
 
