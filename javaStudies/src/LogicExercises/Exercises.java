@@ -24,11 +24,19 @@ public class Exercises {
         // June");
 
         // Exercise 4
+        // System.out.println("Enter value");
+        // int n1 = entry.nextInt();
+        // System.out.println("Enter value");
+        // int n2 = entry.nextInt();
+        // System.out.println("The sum between " + n1 + " and " + n2 + " equals " + (n1
+        // + n2));
+
+        // Exercise five
         System.out.println("Enter value");
-        int n1 = entry.nextInt();
+        double n1 = entry.nextDouble();
         System.out.println("Enter value");
-        int n2 = entry.nextInt();
-        System.out.println("The sum between " + n1 + " and " + n2 + " equals " + (n1 + n2));
+        double n2 = entry.nextDouble();
+        System.out.println("The average between " + n1 + " and " + n2 + " equals " + (n1 + n2) / 2);
 
         entry.close();
 
