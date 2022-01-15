@@ -11,9 +11,16 @@ public class Exercises {
         // System.out.println("Hello World");
 
         // Exercise 2
-        System.out.println("Enter your name");
+        // System.out.println("Enter your name");
+        // String name = entry.nextLine();
+        // System.out.println("Hello " + name + " nice to meet you");
+
+        // Exercise 3
+        System.out.println("Enter name");
         String name = entry.nextLine();
-        System.out.println("Hello " + name + " nice to meet you");
+        System.out.println("Salary?");
+        double salary = entry.nextDouble();
+        System.out.println("Employee " + name + " has a salary of R$" + salary + " in June");
 
         entry.close();
 
