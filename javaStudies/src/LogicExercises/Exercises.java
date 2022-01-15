@@ -32,11 +32,17 @@ public class Exercises {
         // + n2));
 
         // Exercise five
+        // System.out.println("Enter value");
+        // double n1 = entry.nextDouble();
+        // System.out.println("Enter value");
+        // double n2 = entry.nextDouble();
+        // System.out.println("The average between " + n1 + " and " + n2 + " equals " +
+        // (n1 + n2) / 2);
+
+        // Exercise six
         System.out.println("Enter value");
-        double n1 = entry.nextDouble();
-        System.out.println("Enter value");
-        double n2 = entry.nextDouble();
-        System.out.println("The average between " + n1 + " and " + n2 + " equals " + (n1 + n2) / 2);
+        int n1 = entry.nextInt();
+        System.out.println("Its predecessor is " + (n1 - 1) + " and its successor is " + (n1 + 1));
 
         entry.close();
 
