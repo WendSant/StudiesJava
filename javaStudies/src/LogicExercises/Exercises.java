@@ -52,12 +52,17 @@ public class Exercises {
         // third part is " + (n1 / 3));
 
         // Exercise eight
+        // System.out.println("Enter value");
+        // double n1 = entry.nextDouble();
+        // System.out.println("The distance of " + n1 + " corresponds to:");
+        // System.out.print((n1 / 1000) + "Km " + n1 * 10 + "dm\n");
+        // System.out.print((n1 / 100) + "Hm " + n1 * 100 + "cm\n");
+        // System.out.print((n1 / 10) + "Dam " + n1 * 1000 + "mm\n");
+
+        // Exercise nine
         System.out.println("Enter value");
         double n1 = entry.nextDouble();
-        System.out.println("The distance of " + n1 + " corresponds to:");
-        System.out.print((n1 / 1000) + "Km                    " + n1 * 10 + "dm\n");
-        System.out.print((n1 / 100) + "Hm                    " + n1 * 100 + "cm\n");
-        System.out.print((n1 / 10) + "Dam                    " + n1 * 1000 + "mm\n");
+        System.out.println("Money available in dollar $" + (n1 * 3.45));
 
         entry.close();
 
