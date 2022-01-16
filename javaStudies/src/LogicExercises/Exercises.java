@@ -65,11 +65,22 @@ public class Exercises {
         // System.out.println("Money available in dollar $" + (n1 * 3.45));
 
         // Exercise ten
-        System.out.println("Enter value");
-        double n1 = entry.nextDouble();
-        System.out.println("Enter value");
-        double n2 = entry.nextDouble();
-        System.out.println("The area is " + (n1 * n2) + "m² and the amount of paint needed is " + ((n1 * n2) / 2));
+        // System.out.println("Enter value");
+        // double n1 = entry.nextDouble();
+        // System.out.println("Enter value");
+        // double n2 = entry.nextDouble();
+        // System.out.println("The area is " + (n1 * n2) + "m² and the amount of paint
+        // needed is " + ((n1 * n2) / 2));
+
+        // Exercise eleven
+        System.out.println("Enter value of A");
+        int n1 = entry.nextInt();
+        System.out.println("Enter value of B");
+        int n2 = entry.nextInt();
+        System.out.println("Enter value of C");
+        int n3 = entry.nextInt();
+
+        System.out.println("The delta is " + (Math.pow(n2, 2) - 4 * n1 * (n3)));
 
         entry.close();
 
