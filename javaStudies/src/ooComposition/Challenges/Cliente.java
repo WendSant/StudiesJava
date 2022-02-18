@@ -6,5 +6,5 @@ import java.util.List;
 public class Cliente {
 
     String nome;
-    List<Compra> list = new ArrayList<Compra>();
+    List<Compra> compras = new ArrayList<>();
 }
