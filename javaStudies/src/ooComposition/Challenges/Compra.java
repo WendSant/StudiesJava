@@ -7,8 +7,16 @@ public class Compra {
 
     List<Item> itens = new ArrayList<>();
 
-    double obterValorTotal() {
-
-        return 0;
+    public double valorTotal() {
+        double valueTotal = 0;
+        for (Item item : itens) {
+            for (Produto item2 : item.produtos) {
+                // System.out.println("O produto é: " + item2.name + " seu preço é: " +
+                // item2.preco + " sua quantidade: "
+                // + item.count);
+                valueTotal += item2.preco * item.count;
+            }
+        }
+        return valueTotal;
     }
 }
