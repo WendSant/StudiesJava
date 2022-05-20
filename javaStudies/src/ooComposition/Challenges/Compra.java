@@ -19,4 +19,8 @@ public class Compra {
         }
         return valueTotal;
     }
+
+    void addItem() {
+
+    }
 }
