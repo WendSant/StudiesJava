@@ -16,4 +16,9 @@ public class Car {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Velocidade atual do transformers: " + velocidadeAtual + "KM/h";
+    }
+
 }
