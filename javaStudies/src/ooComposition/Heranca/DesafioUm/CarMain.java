@@ -4,7 +4,7 @@ public class CarMain {
 
     public static void main(String[] args) {
 
-        Ferrari f1 = new Ferrari();
+        Ferrari f1 = new Ferrari(250);
 
         System.out.println(f1);
         f1.acelerar();
@@ -14,7 +14,7 @@ public class CarMain {
         f1.freiar();
         System.out.println(f1);
 
-        Civic c1 = new Civic();
+        Civic c1 = new Civic(100);
 
         System.out.println(c1);
         c1.acelerar();
